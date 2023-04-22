@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="https://kit.fontawesome.com/9a1828c874.js" crossorigin="anonymous"></script>
+
+    <title>Blogin</title>
+  </head>
+  <body class="main-layout">
+    <header class="main-header main-layout">
+      <div class="main-header-width flex space-between align-center">
+        <div class="logo">Blogin<span class="dot">.</span></div>
+        <nav class="main-nav">
+          <ul class="main-menu flex column clean-list hidden">
+            <li onclick="controlJournalClick()" class="flex center main-menu-journal">
+              <a href="#">Journal</a>
+              <i class="fa-solid fa-chevron-up hidden"></i>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="sub-menu flex column clean-list hidden">
+                <li class="flex center"><a href="#">October 2016</a></li>
+                <li class="flex center"><a href="#">January 2017</a></li>
+                <li class="flex center"><a href="#">April 2017</a></li>
+                <li class="flex center"><a href="#">July 2017</a></li>
+              </ul>
+            </li>
+            <li class="flex center">
+              <a href="#">About</a>
+            </li>
+            <li class="flex center"><a href="#">Work</a></li>
+            <li class="flex center"><a href="#">Contact</a></li>
+          </ul>
+          <div class="mobile-nav">
+            <i onclick="controlMobileNav(true)" class="fa-solid fa-bars"></i>
+            <i onclick="controlMobileNav(false)" class="fa-solid fa-xmark hidden"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <article class="card card-layout">
+        <img class="card-image" src="images/01.png" alt="" />
+        <div class="flex column space-between">
+          <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+          <p class="card-text">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+          <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+          <button onclick="onToggleModal()" class="card-button">Continue Reading</button>
+        </div>
+      </article>
+      <article class="card card-layout">
+        <img class="card-image" src="images/02.png" alt="" />
+        <div class="flex column space-between">
+          <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+          <p class="card-text">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+          <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+          <button onclick="onToggleModal()" class="card-button">Continue Reading</button>
+        </div>
+      </article>
+      <article class="card card-layout">
+        <img class="card-image" src="images/03.png" alt="" />
+        <div class="flex column space-between">
+          <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+          <p class="card-text">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+          <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+          <button onclick="onToggleModal()" class="card-button">Continue Reading</button>
+        </div>
+      </article>
+      <div onclick="onToggleModal()" class="modal-background closed"></div>
+      <article class="modal modal-layout closed">
+        <h2 class="modal-text">Join us to get access to the latest stories!</h2>
+        <label class="modal-input-label">
+          Email
+          <input class="modal-input" type="email" placeholder="Your email here" />
+        </label>
+        <button data-trans="modal-close" class="modal-btn" onclick="onToggleModal()">Submit</button>
+        <button data-trans="modal-close" class="modal-btn" onclick="onToggleModal()">Close</button>
+      </article>
+      <div class="pagination flex space-between align-center">
+        <p>&#8592; previous</p>
+        <p>next &#8594;</p>
+      </div>
+    </main>
+    <footer class="footer flex center">
+      <div class="flex column center">
+        <div class="logo">Blogin<span class="dot">.</span></div>
+        <p class="footer-copyrights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span></p>
+        <div class="footer-brands-container flex center">
+          <div class="footer-brand-background flex center">
+            <i class="fa-brands fa-facebook-f footer-brand" style="color: #ffffff"></i>
+          </div>
+          <div class="footer-brand-background flex center">
+            <i class="fa-brands fa-twitter footer-brand" style="color: #ffffff"></i>
+          </div>
+          <div class="footer-brand-background flex center">
+            <i class="fa-brands fa-behance footer-brand" style="color: #ffffff"></i>
+          </div>
+          <div class="footer-brand-background flex center">
+            <i class="fa-brands fa-dribbble footer-brand" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/modal.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>

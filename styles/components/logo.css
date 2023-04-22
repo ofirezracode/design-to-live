@@ -1,0 +1,9 @@
+.logo {
+  color: #fff;
+  font-family: eurofurence;
+  font-size: 4rem;
+  letter-spacing: -0.8px;
+}
+.logo .dot {
+  color: var(--green);
+}

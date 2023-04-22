@@ -1,0 +1,25 @@
+.main-layout {
+  display: block;
+}
+
+.main-layout > * {
+  grid-column: 2;
+}
+
+.card-layout {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.modal-layout {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2.4rem;
+
+  justify-items: center;
+  align-items: center;
+}

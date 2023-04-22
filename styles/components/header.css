@@ -1,0 +1,118 @@
+.main-header {
+  height: 13rem;
+  width: 100%;
+  grid-column: span 3;
+  background-color: var(--darkest-gray);
+  box-shadow: inset 0 -6px 0 var(--dark-slate-gray);
+}
+.main-header-width {
+  position: relative;
+  width: 100%;
+  height: 13rem;
+  padding-inline: 6rem;
+
+  color: #fff;
+}
+
+.main-nav.fixed {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  translate: 0 0;
+
+  background-color: var(--darkest-gray);
+
+  z-index: 1;
+}
+
+.main-nav.fixed .mobile-nav {
+  position: absolute;
+  top: 6.5rem;
+  right: 6rem;
+  translate: 0 -50%;
+}
+
+.main-nav .main-menu {
+  margin-block-start: 13rem;
+}
+
+.main-nav .main-menu li {
+  width: 100%;
+  height: 13rem;
+  box-shadow: 0 -1px 0 var(--slate-gray), 0 1px 0 var(--slate-gray);
+  transition: all 0.25s;
+
+  cursor: pointer;
+}
+
+.main-nav .main-menu a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 0.8px;
+  text-shadow: 0 1px 0 var(--dark-slate-gray);
+  font-weight: 700;
+}
+
+.main-nav .main-menu > li:hover,
+.main-nav .main-menu > li.active {
+  box-shadow: 0 -1px 0 var(--slate-gray), inset 0 -6px 0 var(--green);
+}
+
+.main-nav .main-menu > li:hover,
+.main-nav .main-menu > li.active a {
+  color: var(--green);
+}
+
+.mobile-nav i {
+  position: unset;
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.fa-bars.hidden {
+  display: none;
+}
+.fa-xmark.hidden {
+  display: none;
+}
+.fa-chevron-up.hidden {
+  display: none;
+}
+.fa-chevron-down.hidden {
+  display: none;
+}
+
+.main-menu-journal {
+  position: relative;
+}
+
+.main-menu-journal i {
+  margin-inline-start: 1rem;
+  margin-block-start: 0.3rem;
+}
+
+.main-nav .sub-menu {
+  position: absolute;
+  top: 13rem;
+  left: 0;
+  width: 100%;
+
+  background-color: var(--light-gray);
+
+  transition: all 0.3s;
+}
+
+.main-nav .sub-menu a {
+  color: var(--darker-gray);
+  font-weight: 400;
+}
+
+.main-nav .sub-menu li:hover {
+  background-color: var(--medium-gray);
+}
+
+.main-nav .sub-menu li:hover a {
+  color: var(--slate-gray);
+}

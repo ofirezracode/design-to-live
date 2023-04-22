@@ -1,0 +1,11 @@
+.pagination {
+  padding: 3rem;
+
+  border-block-start: 1px solid var(--light-gray);
+
+  color: var(--medium-dark-gray);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
